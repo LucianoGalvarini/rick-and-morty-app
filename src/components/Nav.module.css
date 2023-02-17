@@ -1,0 +1,9 @@
+.divNav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  background-color: #2b828a;
+}
+
+.divSearchBar {
+}

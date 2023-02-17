@@ -1,0 +1,47 @@
+.cardDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  width: 300px;
+}
+
+.cardDiv button {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: #fa2222;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+.cardDiv button:hover {
+  background-color: #fa5252;
+}
+
+.divImg {
+  position: relative;
+}
+
+.divImg h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.divImg img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.divSubtitles {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
