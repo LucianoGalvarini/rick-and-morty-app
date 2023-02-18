@@ -23,23 +23,35 @@ export default function Form({ login }) {
     <div>
       <h1>Login</h1>
       <form className={styles.containerForm} onSubmit={handleSubmit}>
-        <label htmlFor="username">Username: </label>
-        <input
-          type="text"
-          name="username"
-          onChange={handleInputChange}
-          value={userData.username}
-        />
-        <p>{errors.username}</p>
-        <label htmlFor="username">Password: </label>
-        <input
-          type="password"
-          name="password"
-          onChange={handleInputChange}
-          value={userData.password}
-        />
-        <p>{errors.password}</p>
-        <button type="submit">Ingresar</button>
+        <div className={styles.divForm}>
+          <label htmlFor="username" className={styles.labelForm}>
+            Username:{" "}
+          </label>
+          <input
+            className={styles.inputForm}
+            type="text"
+            name="username"
+            onChange={handleInputChange}
+            value={userData.username}
+          />
+          <p>{errors.username}</p>
+        </div>
+        <div className={styles.divForm}>
+          <label htmlFor="username" className={styles.labelForm}>
+            Password:{" "}
+          </label>
+          <input
+            className={styles.inputForm}
+            type="password"
+            name="password"
+            onChange={handleInputChange}
+            value={userData.password}
+          />
+          <p>{errors.password}</p>
+        </div>
+        <button type="submit" className={styles.buttonForm}>
+          Ingresar
+        </button>
       </form>
     </div>
   );

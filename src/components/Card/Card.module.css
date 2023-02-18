@@ -2,55 +2,58 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: right;
   border: 1px solid black;
   padding: 8px;
-  margin-bottom: 16px;
+  margin: 16px 0px;
   width: 300px;
-  height: 400px;
+  height: 450px;
   border-radius: 8px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  background-image: url(/public/fondoCards.png);
-  box-shadow: 0 0 20px #fafafa;
+  background-color: rgb(0, 0, 0, 0.4);
 }
-
 .closeButton {
-  cursor: pointer;
-  background-color: red;
-  color: white;
-  border: 1px solid black;
-
-  width: 32px;
-  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  background-color: beige;
+  color: rgba(0, 0, 0, 0.6);
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
 }
+
 .closeButton:hover {
-  background-color: red;
-  color: white;
+  color: rgba(0, 0, 0, 1);
 }
+
+.divs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid beige;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
 .name {
   color: beige;
-  margin-top: 16px;
-  font-size: 20px;
   font-weight: bold;
+  font-size: 35px;
 }
 
 .species {
   color: beige;
-  font-size: 16px;
 }
 
 .gender {
   color: rgb(63, 207, 63);
-  font-size: 16px;
 }
 
 .image {
   width: 100%;
-  height: 200px;
-  margin-top: 16px;
+  height: 250px;
+  margin-bottom: 15px;
   object-fit: cover;
   border: 8px;
   border-radius: 8px;

@@ -7,13 +7,16 @@ import styles from "./Nav.module.css";
 export default function Nav(props) {
   return (
     <div className={styles.containerNav}>
+      <SearchBar onSearch={props.onSearch} />
       <Link to="/home">
         <span>Home</span>
       </Link>
       <Link to="/about">
         <span>About</span>
       </Link>
-      <SearchBar onSearch={props.onSearch} />
+      <Link to="/">
+        <span>Logout</span>
+      </Link>
     </div>
   );
 }

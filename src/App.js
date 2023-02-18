@@ -13,8 +13,8 @@ function App() {
   const navigate = useNavigate();
   const location = useLocation();
   const [access, setAccess] = useState(false);
-  const username = "nviscio@gmail.com";
-  const password = "renzo1234";
+  const username = "galvariniluciano@gmail.com";
+  const password = "luciano123";
   const logOut = () => {
     setAccess(false);
     navigate("/");
@@ -55,12 +55,8 @@ function App() {
   return (
     <div className="App" style={{ padding: "25px" }}>
       {location.pathname !== "/" && <Nav onSearch={onSearch} logOut={logOut} />}
-      <hr />
       <Routes>
-        <Route
-          path="/home"
-          element={<Cards characters={characters} onClose={onClose} />}
-        />
+        <Route path="/home" element={<Cards characters={characters} onClose={onClose} />} />
         <Route path="/about" element={<About />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/" element={<Form login={login} />} />
