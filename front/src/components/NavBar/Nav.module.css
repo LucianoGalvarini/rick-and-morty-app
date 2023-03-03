@@ -1,0 +1,41 @@
+.containerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #26394d;
+  color: beige;
+  padding: 12px;
+  gap: 15px;
+  border-radius: 12px;
+}
+
+.leftLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rightLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+a:link,
+a:visited {
+  color: rgb(245, 245, 220);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+a:hover {
+  cursor: pointer;
+  color: rgb(63, 207, 63);
+}
+
+@media (max-width: 600px) {
+  .containerNav {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}

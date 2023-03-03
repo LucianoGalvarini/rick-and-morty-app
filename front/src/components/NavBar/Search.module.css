@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.input {
+  border: 1px solid rgb(63, 207, 63);
+  background-color: rgb(38, 44, 58);
+  color: #3fcf3f;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.button {
+  border: 1px solid rgb(63, 207, 63);
+  background-color: rgb(38, 44, 58);
+  color: rgb(63, 207, 63);
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    padding-right: 40px;
+  }
+}
